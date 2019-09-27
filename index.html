@@ -59,6 +59,32 @@
       </form>
     </div>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD3YkSIGZCbT421eXekYxVI5jOxO5slhrM",
+        authDomain: "random-3e6f1.firebaseapp.com",
+        databaseURL: "https://random-3e6f1.firebaseio.com",
+        projectId: "random-3e6f1",
+        storageBucket: "random-3e6f1.appspot.com",
+        messagingSenderId: "567194104505",
+        appId: "1:567194104505:web:a677f8729452fe08186168",
+        measurementId: "G-NG858WNL7C"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    </script>
+
     <script src="./scripts/chat.js"></script>
     <script src="./scripts/ui.js"></script>
     <script src="./scripts/app.js"></script>
