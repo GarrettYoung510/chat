@@ -3,6 +3,7 @@ const chatList = document.querySelector(".chat-list");
 const newChatForm = document.querySelector(".new-chat");
 const newNameForm = document.querySelector(".new-name");
 const updateMssg = document.querySelector(".update-mssg");
+const rooms = document.querySelector("chat-rooms");
 
 // add a new chat
 newChatForm.addEventListener("submit", e => {
@@ -30,6 +31,18 @@ newNameForm.addEventListener("submit", e => {
   setTimeout(() => {
     updateMssg.innerText = "";
   }, 3000);
+});
+
+// update the chat room
+rooms.addEventListener("click", e => {
+  console.log(e);
+  if (e.target.tagName === "BUTTON") {
+    // clear the chats
+    chatUI.clear();
+    // get new room chats
+    chatroom.updateRoom(e.target.getAttribute("id"));
+    chatroom.getChats(chat => chatUI.render(chat));
+  }
 });
 
 // check local storage for a name ternary and defaults to anon if no username in local storage
