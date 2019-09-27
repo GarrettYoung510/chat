@@ -42,9 +42,12 @@ class Chatroom {
         });
       });
   }
+
   updateName(username) {
     this.username = username;
+    localStorage.setItem("username", username);
   }
+
   updateRoom(room) {
     this.room = room;
     console.log("room updated");
