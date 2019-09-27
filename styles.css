@@ -1,0 +1,15 @@
+/* thinner central column */
+.container {
+  max-width: 600px;
+}
+
+/* focused */
+.btn {
+  background: #43d9be;
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.btn:focus {
+  outline: none !important;
+}
