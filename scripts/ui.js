@@ -15,7 +15,7 @@ class ChatUI {
     const when = data.created_at.toDate();
     // const now = Date.now();
     // const diff = now - when;
-    const timeDisplay = moment(when).startOf("minute").fromNow();
+    const timeDisplay = moment(when).startOf("second").fromNow();
     // console.log(moment.utc(diff*1000).format('HH:mm:ss'));
     const html = `<li class="list-group-item">
         <span class="username">${data.username}</span>
