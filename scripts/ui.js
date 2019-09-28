@@ -13,10 +13,14 @@ class ChatUI {
     //   addSuffix: true
     // });
     const when = data.created_at.toDate();
+    // const now = Date.now();
+    // const diff = now - when;
+    const timeDisplay = moment(when).startOf("hour").fromNow();
+    // console.log(moment.utc(diff*1000).format('HH:mm:ss'));
     const html = `<li class="list-group-item">
         <span class="username">${data.username}</span>
         <span class="message">${data.message}</span>
-        <div class="time">${when}</div></li>`;
+        <div class="time">${timeDisplay}</div></li>`;
     this.list.innerHTML += html;
   }
 }
