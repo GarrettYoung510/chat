@@ -1,5 +1,7 @@
 # [Chat](https://garrettyoung510.github.io/chat/)
 
+![Live Preview](https://media.giphy.com/media/LoUMk5eJEEYMxPqIYv/giphy.gif)
+
 ## Reasoning/Motivation
 
 Built as a refresher on front end topics
