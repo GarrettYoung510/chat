@@ -10,11 +10,12 @@ Built as a refresher on front end topics
 * Array Manipulation methods (.forEach, setTimeout)
 * Firebase (database, snapshot methods like .docChanges)
 * Bootstrap 
-* Date fns
+* Moment js for compatibility with github pages
 
 ## Challenges
 
 * Getting the rooms to change chats, but figured out to clear the chat room and reupload the chats from the database
+* Getting a format api for compatibility issues with github
 * Refresher on array manipulation methods and vanilla JS
 
 ## Next Steps
